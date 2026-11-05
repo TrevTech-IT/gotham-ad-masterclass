@@ -87,6 +87,7 @@ Both build scripts skip anything that already exists, so running them again is s
 |---|---|
 | EP0: the domain controller | `EP00-domain-controller-commands.md`, section by section |
 | EP1: the build | `New-GothamUsers.ps1`, then `Invoke-GothamLeaver.ps1` for the leaver |
+| EP2: Group Policy | coming with the episode |
 | Groups & permissions | `New-GothamGroups.ps1` |
 | Tiered admin | both scripts with `-IncludeAdminTier` |
 
