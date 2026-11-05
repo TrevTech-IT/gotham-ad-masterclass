@@ -59,7 +59,6 @@
 
 .NOTES
     Author  : Trev - TrevTech-IT | trevtech.blog
-    Repo    : TrevTech-IT/PowershellForActiveDirectory
     Built for: Windows Server 2025 (works on 2016+), Windows PowerShell 5.1 / PowerShell 7, ActiveDirectory module
 
     Lab shortcut to know about: OUs are created with accidental-deletion protection
