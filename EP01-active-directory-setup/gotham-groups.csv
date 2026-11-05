@@ -1,0 +1,24 @@
+Name,Scope,Tier,OU,Description,NestInto
+GG-Executive,Global,,"OU=Role Groups,OU=Groups,DC=gotham,DC=lab","Role: Wayne Enterprises executive team",GG-AllStaff;DL-Executive-Board-RW;DL-Batcave-Share-RO;DL-AppliedSciences-Vault-RO
+GG-RD,Global,,"OU=Role Groups,OU=Groups,DC=gotham,DC=lab","Role: R&D staff",GG-AllStaff;DL-Batcave-Share-RW
+GG-AppliedSciences,Global,,"OU=Role Groups,OU=Groups,DC=gotham,DC=lab","Role: Applied Sciences staff",GG-AllStaff;DL-AppliedSciences-Vault-RW
+GG-Security,Global,,"OU=Role Groups,OU=Groups,DC=gotham,DC=lab","Role: corporate security team",GG-AllStaff;DL-Security-CCTV-RW
+GG-IT,Global,,"OU=Role Groups,OU=Groups,DC=gotham,DC=lab","Role: IT department (daily accounts - no admin rights)",GG-AllStaff;DL-IT-Tools-RW
+GG-Operations,Global,,"OU=Role Groups,OU=Groups,DC=gotham,DC=lab","Role: operations and facilities",GG-AllStaff;DL-Operations-Share-RW
+GG-Managers,Global,,"OU=Role Groups,OU=Groups,DC=gotham,DC=lab","Role: anyone with direct reports",DL-HR-Reports-RO
+GG-AllStaff,Global,,"OU=Role Groups,OU=Groups,DC=gotham,DC=lab","Role: every Wayne Enterprises employee (department groups nest in here)",DL-Public-Share-RW
+GG-Contractors,Global,,"OU=Role Groups,OU=Groups,DC=gotham,DC=lab","Role: active contractors - never nested into GG-AllStaff",DL-Public-Share-RO
+DL-Batcave-Share-RW,DomainLocal,,"OU=Resource Groups,OU=Groups,DC=gotham,DC=lab","Resource: Batcave (R&D) share - Modify",
+DL-Batcave-Share-RO,DomainLocal,,"OU=Resource Groups,OU=Groups,DC=gotham,DC=lab","Resource: Batcave (R&D) share - Read",
+DL-AppliedSciences-Vault-RW,DomainLocal,,"OU=Resource Groups,OU=Groups,DC=gotham,DC=lab","Resource: Applied Sciences vault - Modify",
+DL-AppliedSciences-Vault-RO,DomainLocal,,"OU=Resource Groups,OU=Groups,DC=gotham,DC=lab","Resource: Applied Sciences vault - Read",
+DL-Executive-Board-RW,DomainLocal,,"OU=Resource Groups,OU=Groups,DC=gotham,DC=lab","Resource: board papers share - Modify",
+DL-Security-CCTV-RW,DomainLocal,,"OU=Resource Groups,OU=Groups,DC=gotham,DC=lab","Resource: CCTV archive share - Modify",
+DL-IT-Tools-RW,DomainLocal,,"OU=Resource Groups,OU=Groups,DC=gotham,DC=lab","Resource: IT tools and installers share - Modify",
+DL-Operations-Share-RW,DomainLocal,,"OU=Resource Groups,OU=Groups,DC=gotham,DC=lab","Resource: operations share - Modify",
+DL-HR-Reports-RO,DomainLocal,,"OU=Resource Groups,OU=Groups,DC=gotham,DC=lab","Resource: HR reports - Read",
+DL-Public-Share-RW,DomainLocal,,"OU=Resource Groups,OU=Groups,DC=gotham,DC=lab","Resource: company-wide public share - Modify",
+DL-Public-Share-RO,DomainLocal,,"OU=Resource Groups,OU=Groups,DC=gotham,DC=lab","Resource: company-wide public share - Read",
+GG-Tier0-Admins,Global,0,"OU=Tier 0,OU=Admin,DC=gotham,DC=lab","Admin: Tier 0 - domain controllers and AD itself",Domain Admins
+GG-Tier1-ServerAdmins,Global,1,"OU=Tier 1,OU=Admin,DC=gotham,DC=lab","Admin: Tier 1 - member servers (granted by GPO in the tiering episode)",
+GG-Tier2-Helpdesk,Global,2,"OU=Tier 2,OU=Admin,DC=gotham,DC=lab","Admin: Tier 2 - workstations and password resets (delegated in the delegation episode)",
